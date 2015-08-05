@@ -1,0 +1,21 @@
+{
+  "name": "rclass",
+  "version": "0.0.1",
+  "description": "RClass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "php"
+  ],
+  "author": "Juan Antonio Breña Moral",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-php": "^1.5.0",
+    "load-grunt-tasks": "^3.2.0",
+    "time-grunt": "^1.2.1"
+  }
+}

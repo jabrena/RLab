@@ -1,0 +1,213 @@
+#######################################################
+# This file defines the banned R functions
+#
+# 1. Comment begins with a #
+# 2. To ban only an option in a function, use "|"
+#    e.g.
+#
+#         cat | file=
+#
+#    will ban "cat" function only with option "file="
+#    all other options in "cat" will be permitted
+#    e.g. cat("X value = ",$X)
+#######################################################
+#####################
+# .C, .F, and External
+#####################
+.Fortran
+.External
+.External.graphics
+.Call.graphics
+.Call
+#####################
+# Edit functions
+#####################
+edit
+edit.data.frame
+vi
+emacs
+pico
+xemacs
+xedit
+de
+data.entry
+dataentry
+#####################
+# Graphic functions
+#####################
+postscript
+pdf
+pictex
+xfig
+x11
+X11
+png
+#jpeg
+quartz
+graphics.off
+Gnome
+#####################
+# Graphic functions
+#    Tk, Tcl
+#####################
+.Tcl
+.Tcl.args
+.Tcl.callback
+.Tk.ID
+.Tk.newwin
+.Tk.subwin
+.Tkwin
+.Tkroot
+tkpager
+tkStartGUI
+gtk
+GTK
+GTK.GNOME
+screen
+split.screen
+erase.screen
+cloae.screen
+#####################
+# Device functions
+#####################
+dev2bitmap
+dev.cur
+dev.list
+dev.next
+dev.prev
+dev.print
+dev.set
+dev.control
+dev.copy2eps
+#####################
+# System functions
+#####################
+fifo
+pipe
+system
+system.file
+Sys.info
+Sys.getenv
+Sys.putenv
+Sys.getlocale
+Sys.putlocale
+Sys.source
+sys.source
+sys.parent
+Sys.sleep
+Sys.time
+#####################
+# Dynamic loading
+#####################
+dyn.load
+library.dynam
+#####################
+# Input / Output
+#####################
+cat | file=
+lookup.xport
+read.dta
+write.dta
+data.restore
+read.epiinfo
+read.mtp
+read.spss
+read.ssd
+read.xport
+readLines
+readline
+readBin
+writeBin
+.saveRDS
+.readRDS
+read.00Index
+read.ftable
+write.ftable
+read.fwf
+unz
+zip.file.extract
+gzcon
+dput
+dget
+capture.output
+dump
+setwd
+getwd
+prompt
+promptData
+#####################
+# Input / Output:
+#     File / Dir
+#####################
+save
+tempfile
+seek
+source
+scan
+dir
+dir.create
+url
+url.show
+do.call
+file
+file.access
+file.append
+file.choose
+file.copy
+file.create
+file.exists
+file.info
+file.path
+file.remove
+file.rename
+file.symlink
+file.show
+list.files
+unlink
+basename
+dirname
+write
+writeLines
+write.table
+read
+read.table
+read.csv
+path.expand
+sink
+sink.number
+open
+close
+download.file
+gzfile
+bzfile
+stdin
+stdout
+stderr
+#####################
+# Connection
+#####################
+textConnection
+showConnection
+getConnection
+closeAllConnection
+socketConnection
+make.socket
+read.socket
+print.socket
+write.socket
+#####################
+# Misc
+#####################
+savehistory
+loadhistory
+.Script
+browseURL
+locator
+Rprof
+remove.packages
+make.packages.html
+R.home
+R.version
+fix
+menu
+example
